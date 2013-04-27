@@ -1,3 +1,4 @@
-var classreader = require("./lib/classreader");
+var jcfr = require("./lib/jcfr");
 
-classreader.readFile("C:\\Users\\Philip\\IdeaProjects\\untitled\\out\\production\\untitled\\App.class");
+var json = jcfr.readFile("C:\\Users\\Philip\\IdeaProjects\\untitled\\out\\production\\untitled\\App.class");
+console.log(json);
