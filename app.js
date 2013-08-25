@@ -1,4 +1,6 @@
-var jcfr = require("./lib/jcfr");
+var jcr = require("./lib/jcfr"),
+    AccessFlag = jcr.AccessFlag,
+    ConstPoolTag = jcr.ConstPoolTag;
 
-var json = jcfr.readFile("C:\\Users\\Philip\\IdeaProjects\\untitled\\out\\production\\untitled\\com\\helborn\\Foo.class");
-console.log(json);
+var clazz = jcr.readClassFile("");
+console.log(JSON.stringify(clazz, null, 4));
